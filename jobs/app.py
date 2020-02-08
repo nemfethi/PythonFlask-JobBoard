@@ -1,2 +1,3 @@
-from Flask import flask
-from Flask import render-html
+from flask import Flask, render_template
+
+app = Flask(__name__)
