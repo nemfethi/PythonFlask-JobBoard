@@ -17,13 +17,12 @@
     </div>
     <div class="media-content">
       <div class="content">
-          <p>
-            ><strong>{{review['title']}}</strong>
-            <small>{{review['status']}}</small>
-            <small>{{review['date']}}</small>
-            {{review['review']}}
-            
-          </p>
+        <p>
+          ><strong>{{review['title']}}</strong>
+          <small>{{review['status']}}</small>
+          <small>{{review['date']}}</small>
+          {{review['review']}}
+        </p>
       </div>
     </div>
   </article>
@@ -31,7 +30,11 @@
 {% endfor %}
 <div class="columns">
   <div class="column">
-    <a fref="{{ url_for('review', employer_id=employer['id']) }}" class="button is-info is-pulled-right">Create Review</a>
+    <a
+      fref="{{ url_for('review', employer_id=employer['id']) }}"
+      class="button is-info is-pulled-right"
+      >Create Review</a
+    >
   </div>
 </div>
 {% endblock %}
