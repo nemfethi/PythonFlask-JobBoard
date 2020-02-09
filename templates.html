@@ -43,7 +43,17 @@
   <h2>Jobs</h2>
 
   <h2>Reviews</h2>
-    {# TODO: Remove comment and add for loop
+    {# TODO: Remove comment and add for loop{% extends 'layout.html' %}
+{% block content %}
+  <div class="columns">
+    <div class="column">
+      <h1>Jobs</h1>
+    </div>
+    <div class="column is-one-fifth">
+    </div>
+  </div>
+  {{show_job(job)}}
+{% endblock %}
       {% %}
     #}
     <div class="box">
